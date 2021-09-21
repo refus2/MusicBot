@@ -78,12 +78,12 @@ public class JMusicBot
         EventWaiter waiter = new EventWaiter();
         SettingsManager settings = new SettingsManager();
         Bot bot = new Bot(waiter, config, settings);
-        
+
         AboutCommand aboutCommand = new AboutCommand(Color.BLUE.brighter(),
-                                "the real groovy. I play music and stuff but really all I want to do is beat idiot rhythm into pulp",
-                                new String[]{"Being good at playing music", "Disliking Rhythm", "Doing ur mom"},
+                                "I play music and stuff but really all I want to do is force rhythm into the depths of hell to a slow painful death",
+                                new String[]{"being good at playing music", "disliking rhythm", "doing ur mom"},
                                 RECOMMENDED_PERMS);
-        aboutCommand.setIsAuthor(false);
+        aboutCommand.setIsAuthor(true);
         aboutCommand.setReplacementCharacter("\uD83C\uDFB6"); // 🎶
         
         // set up the command client
