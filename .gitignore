@@ -1,6 +1,8 @@
 /nbproject/
 /Playlists/
 /test/
+/target/
+/.idea/
 *.json
 *.txt
 nb*.xml
