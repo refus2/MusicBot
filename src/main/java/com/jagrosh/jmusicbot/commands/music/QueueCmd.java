@@ -24,6 +24,7 @@ import com.jagrosh.jmusicbot.JMusicBot;
 import com.jagrosh.jmusicbot.audio.AudioHandler;
 import com.jagrosh.jmusicbot.audio.QueuedTrack;
 import com.jagrosh.jmusicbot.commands.MusicCommand;
+import com.jagrosh.jmusicbot.settings.RepeatMode;
 import com.jagrosh.jmusicbot.settings.Settings;
 import com.jagrosh.jmusicbot.utils.FormatUtil;
 import net.dv8tion.jda.api.MessageBuilder;
@@ -37,8 +38,6 @@ import net.dv8tion.jda.api.exceptions.PermissionException;
  */
 public class QueueCmd extends MusicCommand 
 {
-    private final static String REPEAT = "\uD83D\uDD01"; // 🔁
-    
     private final Paginator.Builder builder;
     
     public QueueCmd(Bot bot)
@@ -79,7 +78,7 @@ public class QueueCmd extends MusicCommand
             Message nonowp = ah.getNoMusicPlaying(event.getJDA());
             Message built = new MessageBuilder()
                     .setContent(event.getClient().getWarning() + " There is no music in the queue!")
-                    .setEmbed((nowp==null ? nonowp : nowp).getEmbeds().get(0)).build();
+                    .setEmbeds((nowp==null ? nonowp : nowp).getEmbeds().get(0)).build();
             event.reply(built, m -> 
             {
                 if(nowp!=null)
@@ -104,16 +103,16 @@ public class QueueCmd extends MusicCommand
         builder.build().paginate(event.getChannel(), pagenum);
     }
     
-    private String getQueueTitle(AudioHandler ah, String success, int songslength, long total, boolean repeatmode)
+    private String getQueueTitle(AudioHandler ah, String success, int songslength, long total, RepeatMode repeatmode)
     {
         StringBuilder sb = new StringBuilder();
         if(ah.getPlayer().getPlayingTrack()!=null)
         {
-            sb.append(ah.getPlayer().isPaused() ? JMusicBot.PAUSE_EMOJI : JMusicBot.PLAY_EMOJI).append(" **")
+            sb.append(ah.getStatusEmoji()).append(" **")
                     .append(ah.getPlayer().getPlayingTrack().getInfo().title).append("**\n");
         }
         return FormatUtil.filter(sb.append(success).append(" Current Queue | ").append(songslength)
                 .append(" entries | `").append(FormatUtil.formatTime(total)).append("` ")
-                .append(repeatmode ? "| " + REPEAT : "").toString());
+                .append(repeatmode.getEmoji() != null ? "| "+repeatmode.getEmoji() : "").toString());
     }
 }
