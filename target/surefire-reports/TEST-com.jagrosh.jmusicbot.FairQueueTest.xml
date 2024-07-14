@@ -1,63 +1,58 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="com.jagrosh.jmusicbot.FairQueueTest" time="0.004" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.jagrosh.jmusicbot.FairQueueTest" time="0.107" tests="2" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="idea.version" value="2022.3.3"/>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="java.vm.version" value="17.0.2+8"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/garv/Documents/GitHub/MusicBot"/>
-    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
-    <property name="java.vendor.url" value="https://adoptium.net/"/>
-    <property name="path.separator" value=":"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="user.country" value="AU"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/garv/Documents/GitHub/MusicBot"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
-    <property name="java.runtime.version" value="17.0.2+8"/>
-    <property name="os.arch" value="aarch64"/>
-    <property name="java.io.tmpdir" value="/var/folders/6t/fp3qvzss64x8blcccsb3jy700000gq/T/"/>
-    <property name="line.separator" value="
-"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="os.name" value="Mac OS X"/>
-    <property name="maven.ext.class.path" value="/Users/garv/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.8836.41/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven-event-listener.jar"/>
-    <property name="classworlds.conf" value="/Users/garv/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.8836.41/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/bin/m2.conf"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/garv/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="jansi.passthrough" value="true"/>
-    <property name="maven.conf" value="/Users/garv/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.8836.41/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/conf"/>
-    <property name="jdk.debug" value="release"/>
-    <property name="java.class.version" value="61.0"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="13.2.1"/>
-    <property name="user.home" value="/Users/garv"/>
-    <property name="user.timezone" value="Australia/Melbourne"/>
-    <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="17"/>
-    <property name="user.name" value="garv"/>
-    <property name="java.class.path" value="/Users/garv/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.8836.41/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/Users/garv/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.8836.41/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar"/>
-    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/garv/Documents/GitHub/MusicBot/target/test-classes:/Users/garv/Documents/GitHub/MusicBot/target/classes:/Users/garv/.m2/repository/net/dv8tion/JDA/4.4.1_353/JDA-4.4.1_353.jar:/Users/garv/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/garv/.m2/repository/org/jetbrains/annotations/16.0.1/annotations-16.0.1.jar:/Users/garv/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/garv/.m2/repository/com/neovisionaries/nv-websocket-client/2.14/nv-websocket-client-2.14.jar:/Users/garv/.m2/repository/com/squareup/okhttp3/okhttp/3.13.0/okhttp-3.13.0.jar:/Users/garv/.m2/repository/com/squareup/okio/okio/1.17.2/okio-1.17.2.jar:/Users/garv/.m2/repository/club/minnced/opus-java-api/1.1.0/opus-java-api-1.1.0.jar:/Users/garv/.m2/repository/net/java/dev/jna/jna/4.4.0/jna-4.4.0.jar:/Users/garv/.m2/repository/club/minnced/opus-java-natives/1.1.0/opus-java-natives-1.1.0.jar:/Users/garv/.m2/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar:/Users/garv/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar:/Users/garv/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.1/jackson-databind-2.10.1.jar:/Users/garv/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.1/jackson-annotations-2.10.1.jar:/Users/garv/.m2/repository/com/jagrosh/jda-utilities-command/3.0.5/jda-utilities-command-3.0.5.jar:/Users/garv/.m2/repository/com/jagrosh/jda-utilities-commons/3.0.5/jda-utilities-commons-3.0.5.jar:/Users/garv/.m2/repository/com/jagrosh/jda-utilities-doc/3.0.5/jda-utilities-doc-3.0.5.jar:/Users/garv/.m2/repository/com/jagrosh/jda-utilities-examples/3.0.5/jda-utilities-examples-3.0.5.jar:/Users/garv/.m2/repository/com/jagrosh/jda-utilities-menu/3.0.5/jda-utilities-menu-3.0.5.jar:/Users/garv/.m2/repository/com/jagrosh/jda-utilities-oauth2/3.0.5/jda-utilities-oauth2-3.0.5.jar:/Users/garv/.m2/repository/dev/arbjerg/lavaplayer/2.2.1/lavaplayer-2.2.1.jar:/Users/garv/.m2/repository/dev/arbjerg/lava-common/2.2.1/lava-common-2.2.1.jar:/Users/garv/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/Users/garv/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/garv/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/garv/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/garv/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2.jar:/Users/garv/.m2/repository/dev/arbjerg/lavaplayer-natives/2.2.1/lavaplayer-natives-2.2.1.jar:/Users/garv/.m2/repository/org/mozilla/rhino-engine/1.7.14/rhino-engine-1.7.14.jar:/Users/garv/.m2/repository/org/mozilla/rhino/1.7.14/rhino-1.7.14.jar:/Users/garv/.m2/repository/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar:/Users/garv/.m2/repository/net/iharder/base64/2.3.9/base64-2.3.9.jar:/Users/garv/.m2/repository/org/json/json/20240303/json-20240303.jar:/Users/garv/.m2/repository/dev/lavalink/youtube/common/1.4.0/common-1.4.0.jar:/Users/garv/.m2/repository/com/grack/nanojson/1.7/nanojson-1.7.jar:/Users/garv/.m2/repository/com/github/jagrosh/JLyrics/master-01cf4ee007-1/JLyrics-master-01cf4ee007-1.jar:/Users/garv/.m2/repository/com/dunctebot/sourcemanagers/1.9.0/sourcemanagers-1.9.0.jar:/Users/garv/.m2/repository/ch/qos/logback/logback-classic/1.2.13/logback-classic-1.2.13.jar:/Users/garv/.m2/repository/ch/qos/logback/logback-core/1.2.13/logback-core-1.2.13.jar:/Users/garv/.m2/repository/com/typesafe/config/1.3.2/config-1.3.2.jar:/Users/garv/.m2/repository/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.jar:/Users/garv/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/garv/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2022.3.3 package"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="AU"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/garv/Documents/GitHub/MusicBot/target/surefire/surefirebooter-20240714230232072_3.jar /Users/garv/Documents/GitHub/MusicBot/target/surefire 2024-07-14T23-02-31_893-jvmRun1 surefire-20240714230232072_1tmp surefire_0-20240714230232072_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/garv/Documents/GitHub/MusicBot/target/test-classes:/Users/garv/Documents/GitHub/MusicBot/target/classes:/Users/garv/.m2/repository/net/dv8tion/JDA/4.4.1_353/JDA-4.4.1_353.jar:/Users/garv/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/garv/.m2/repository/org/jetbrains/annotations/16.0.1/annotations-16.0.1.jar:/Users/garv/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/garv/.m2/repository/com/neovisionaries/nv-websocket-client/2.14/nv-websocket-client-2.14.jar:/Users/garv/.m2/repository/com/squareup/okhttp3/okhttp/3.13.0/okhttp-3.13.0.jar:/Users/garv/.m2/repository/com/squareup/okio/okio/1.17.2/okio-1.17.2.jar:/Users/garv/.m2/repository/club/minnced/opus-java-api/1.1.0/opus-java-api-1.1.0.jar:/Users/garv/.m2/repository/net/java/dev/jna/jna/4.4.0/jna-4.4.0.jar:/Users/garv/.m2/repository/club/minnced/opus-java-natives/1.1.0/opus-java-natives-1.1.0.jar:/Users/garv/.m2/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar:/Users/garv/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar:/Users/garv/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.1/jackson-databind-2.10.1.jar:/Users/garv/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.1/jackson-annotations-2.10.1.jar:/Users/garv/.m2/repository/com/jagrosh/jda-utilities-command/3.0.5/jda-utilities-command-3.0.5.jar:/Users/garv/.m2/repository/com/jagrosh/jda-utilities-commons/3.0.5/jda-utilities-commons-3.0.5.jar:/Users/garv/.m2/repository/com/jagrosh/jda-utilities-doc/3.0.5/jda-utilities-doc-3.0.5.jar:/Users/garv/.m2/repository/com/jagrosh/jda-utilities-examples/3.0.5/jda-utilities-examples-3.0.5.jar:/Users/garv/.m2/repository/com/jagrosh/jda-utilities-menu/3.0.5/jda-utilities-menu-3.0.5.jar:/Users/garv/.m2/repository/com/jagrosh/jda-utilities-oauth2/3.0.5/jda-utilities-oauth2-3.0.5.jar:/Users/garv/.m2/repository/dev/arbjerg/lavaplayer/2.2.1/lavaplayer-2.2.1.jar:/Users/garv/.m2/repository/dev/arbjerg/lava-common/2.2.1/lava-common-2.2.1.jar:/Users/garv/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/Users/garv/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/garv/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/garv/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/garv/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2.jar:/Users/garv/.m2/repository/dev/arbjerg/lavaplayer-natives/2.2.1/lavaplayer-natives-2.2.1.jar:/Users/garv/.m2/repository/org/mozilla/rhino-engine/1.7.14/rhino-engine-1.7.14.jar:/Users/garv/.m2/repository/org/mozilla/rhino/1.7.14/rhino-1.7.14.jar:/Users/garv/.m2/repository/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar:/Users/garv/.m2/repository/net/iharder/base64/2.3.9/base64-2.3.9.jar:/Users/garv/.m2/repository/org/json/json/20240303/json-20240303.jar:/Users/garv/.m2/repository/dev/lavalink/youtube/common/1.4.0/common-1.4.0.jar:/Users/garv/.m2/repository/com/grack/nanojson/1.7/nanojson-1.7.jar:/Users/garv/.m2/repository/com/github/jagrosh/JLyrics/master-01cf4ee007-1/JLyrics-master-01cf4ee007-1.jar:/Users/garv/.m2/repository/com/dunctebot/sourcemanagers/1.9.0/sourcemanagers-1.9.0.jar:/Users/garv/.m2/repository/ch/qos/logback/logback-classic/1.2.13/logback-classic-1.2.13.jar:/Users/garv/.m2/repository/ch/qos/logback/logback-core/1.2.13/logback-core-1.2.13.jar:/Users/garv/.m2/repository/com/typesafe/config/1.3.2/config-1.3.2.jar:/Users/garv/.m2/repository/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.jar:/Users/garv/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/garv/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/garv"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="17.0.2"/>
-    <property name="native.encoding" value="US-ASCII"/>
-    <property name="java.vendor" value="Eclipse Adoptium"/>
-    <property name="maven.home" value="/Users/garv/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/223.8836.41/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3"/>
-    <property name="file.separator" value="/"/>
     <property name="java.version.date" value="2022-01-18"/>
-    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/garv/Documents/GitHub/MusicBot"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/garv/Documents/GitHub/MusicBot/target/surefire/surefirebooter-20240714230232072_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.2+8"/>
+    <property name="user.name" value="garv"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.5"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="java.vendor.version" value="Temurin-17.0.2+8"/>
+    <property name="localRepository" value="/Users/garv/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/6t/fp3qvzss64x8blcccsb3jy700000gq/T/"/>
+    <property name="idea.version" value="2023.3.4"/>
+    <property name="java.version" value="17.0.2"/>
+    <property name="user.dir" value="/Users/garv/Documents/GitHub/MusicBot"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/garv/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.2+8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase classname="com.jagrosh.jmusicbot.FairQueueTest" name="sameIdentifierSize" time="0.002"/>
-  <testcase classname="com.jagrosh.jmusicbot.FairQueueTest" name="differentIdentifierSize" time="0.002"/>
+  <testcase name="sameIdentifierSize" classname="com.jagrosh.jmusicbot.FairQueueTest" time="0.005"/>
+  <testcase name="differentIdentifierSize" classname="com.jagrosh.jmusicbot.FairQueueTest" time="0.002"/>
 </testsuite>

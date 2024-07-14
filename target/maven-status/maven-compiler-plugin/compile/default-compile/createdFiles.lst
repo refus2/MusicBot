@@ -32,7 +32,6 @@ com/jagrosh/jmusicbot/settings/RepeatMode.class
 com/jagrosh/jmusicbot/commands/owner/EvalCmd.class
 com/jagrosh/jmusicbot/settings/Settings.class
 com/jagrosh/jmusicbot/audio/RequestMetadata.class
-com/jagrosh/jmusicbot/audio/RequestMetadata$1.class
 com/jagrosh/jmusicbot/commands/owner/DebugCmd.class
 com/jagrosh/jmusicbot/entities/Prompt$Level.class
 com/jagrosh/jmusicbot/playlist/PlaylistLoader$Playlist$1.class
@@ -42,12 +41,10 @@ com/jagrosh/jmusicbot/commands/owner/PlaylistCmd$ListCmd.class
 com/jagrosh/jmusicbot/commands/admin/SetdjCmd.class
 com/jagrosh/jmusicbot/commands/music/PlayCmd$PlaylistCmd.class
 com/jagrosh/jmusicbot/commands/dj/StopCmd.class
-com/jagrosh/jmusicbot/commands/music/SearchCmd$1.class
 com/jagrosh/jmusicbot/commands/dj/VolumeCmd.class
 com/jagrosh/jmusicbot/JMusicBot.class
 com/jagrosh/jmusicbot/commands/music/RemoveCmd.class
 com/jagrosh/jmusicbot/audio/AloneInVoiceHandler.class
-com/jagrosh/jmusicbot/commands/music/PlayCmd$1.class
 com/jagrosh/jmusicbot/commands/owner/PlaylistCmd$MakelistCmd.class
 com/jagrosh/jmusicbot/commands/MusicCommand.class
 com/jagrosh/jmusicbot/gui/TextAreaOutputStream.class
@@ -61,7 +58,6 @@ com/jagrosh/jmusicbot/commands/DJCommand.class
 com/jagrosh/jmusicbot/commands/AdminCommand.class
 com/jagrosh/jmusicbot/audio/NowplayingHandler.class
 com/jagrosh/jmusicbot/commands/music/PlaylistsCmd.class
-com/jagrosh/jmusicbot/playlist/PlaylistLoader$1.class
 com/jagrosh/jmusicbot/commands/admin/SetvcCmd.class
 com/jagrosh/jmusicbot/audio/RequestMetadata$UserInfo.class
 com/jagrosh/jmusicbot/commands/owner/PlaylistCmd$DefaultlistCmd.class
@@ -74,7 +70,6 @@ com/jagrosh/jmusicbot/BotConfig.class
 com/jagrosh/jmusicbot/gui/TextAreaOutputStream$Appender.class
 com/jagrosh/jmusicbot/commands/general/SettingsCmd.class
 com/jagrosh/jmusicbot/commands/music/SearchCmd.class
-com/jagrosh/jmusicbot/commands/owner/SetgameCmd$1.class
 com/jagrosh/jmusicbot/entities/Prompt.class
 com/jagrosh/jmusicbot/commands/admin/SkipratioCmd.class
 com/jagrosh/jmusicbot/audio/RequestMetadata$RequestInfo.class
@@ -87,4 +82,3 @@ com/jagrosh/jmusicbot/commands/owner/AutoplaylistCmd.class
 com/jagrosh/jmusicbot/audio/TransformativeAudioSourceManager.class
 com/jagrosh/jmusicbot/commands/music/SearchCmd$ResultHandler.class
 com/jagrosh/jmusicbot/commands/admin/SettcCmd.class
-com/jagrosh/jmusicbot/commands/dj/PlaynextCmd$1.class
